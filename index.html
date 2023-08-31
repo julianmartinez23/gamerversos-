@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad de Videojuegos y Mods</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="GamerVerse (5).png" sizes="32x32">
+    <style>
+      /* Estilos generales */
+/* Estilos generales */
+
+body {
+  font-family: Bodoni MT, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f000; /* Color de fondo */
+  color: #f8f8f8;
+  font-size: 33px;
+  text-align: center;
+
+}
+  body {
+    background-image: url('need.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza la página */
+}
+nav {
+  background-color: #3333337e; /* Color de fondo de la barra de navegación */
+  padding: 5px; /* Espaciado interior para separar los elementos */
+}
+
+ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: space-around; /* Distribuye el espacio disponible entre los elementos */
+  align-items: center;/* Centra verticalmente los elementos */
+}
+
+ul li a {
+  font-size: 30px; /* Quita el subrayado de los enlaces */
+  color: white; 
+  /* Color del texto */
+}
+
+ul li a:hover {
+  color: #ffc107; /* Color del texto al pasar el mouse sobre el enlace */
+}
+#texto {
+  width: 380px; /* Ajusta el ancho del campo de búsqueda según tus preferencias */
+  padding: 15px; /* Ajusta el padding interno según tus preferencias */
+  font-size: 34px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+/* Estilos para el elemento con id "busqueda" */
+#busqueda {
+  margin-top: 20px; /* Margen superior */
+  text-align: left; /* Centrar el contenido horizontalmente */
+}
+#busqueda label {
+  font-size: 35px; /* Tamaño de fuente para la etiqueta */
+  color: #ffffff; 
+  border: 27px;/* Color del texto de la etiqueta */
+}
+
+#busqueda input[type="text"] {
+  padding: 8px;
+  font-size: 30px;
+
+
+}
+
+#busqueda button {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 30px; /* Tamaño de fuente del botón */
+  background-color: #333; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Eliminar borde del botón */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4 {
+  color: #f0f3f0; /* Color de los encabezados */
+}
+
+/* Estilos para los párrafos */
+p {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 43px;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #0f0f0f; /* Color del enlace */
+  text-decoration: none;
+
+}
+
+/* Estilos para el contenedor de bienvenida */
+.bienvenida-container {
+  background-color: #02020200; /* Color de fondo del contenedor */
+  padding: 40px; /* Espaciado interior del contenedor */
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.bienvenida-container h2 {
+  color: #fafafa; /* Color del título */
+  font-size: px; /* Tamaño de fuente del título */
+  margin-bottom: 10px; /* Margen inferior del título */
+}
+
+.bienvenida-container p {
+  color: #ffffff; /* Color del texto */
+  font-size: 34px; /* Tamaño de fuente del texto */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  margin-bottom: 20px; /* Margen inferior del texto */
+}
+
+
+/* Cambio de color al pasar el ratón por encima de los enlaces */
+a:hover {
+  color: #e7ebee; /* Color de resaltado del enlace */
+}
+/* Estilos para la sección de Mods Destacados */
+.mod-card {
+  background-color: #363636; /* Color de fondo de las tarjetas */
+  border: 1px solid #000000; /* Borde de las tarjetas */
+  padding: 20px; /* Espaciado interior de las tarjetas */
+  margin: 20px 0; /* Margen exterior de las tarjetas */
+  display: flex; /* Mostrar los elementos en línea */
+  align-items: center; 
+
+}
+
+.mod-card img {
+  max-width: 100px; /* Ancho máximo de la imagen */
+  margin-right: 20px; /* Margen derecho para separar la imagen del contenido */
+}
+
+.mod-card h3 {
+  margin: 15px;
+  color: rgb(2, 1, 1); /* Eliminar el margen superior del título */
+}
+
+.mod-card p {
+  margin: 10px 0; /* Espaciado vertical para el contenido */
+}
+.article-card {
+  background-color: #585858;border: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(255, 251, 251, 0.1);
+  font-size: 1.5rem
+}
+
+.article-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.article-card p {
+  font-size: 25px;
+  color: #fdfcfc;
+  
+}
+
+.article-card #leer-mas {
+  background-color: #007bff; border: 40xp;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.article-card #leer-mas:hover {
+  background-color: #0056b3;
+}
+  .normas {
+    background-image: url('gamer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.normas h3 {
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.normas p {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.normas ol {
+  font-size: 30;
+  color: #ffffff;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.normas li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las secciones */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ffffff00; /* Color de fondo de las secciones */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para las imágenes dentro de las secciones */
+section img {
+    width: 100%;
+    color: rgb(255, 255, 254);
+    display: flex;
+    box-sizing: border-box
+}
+
+/* Estilos para los botones */
+button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de resaltado del botón al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #3f3f3f; /* Color de fondo del pie de página */
+  color: #fffefe00; /* Color del texto del pie de página */
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Estilos para el logotipo del pie de página */
+.logo {
+  max-width: 250px;
+  height: auto;
+  max-top: 20px;
+
+}
+
+/* Estilos para las columnas del pie de página */
+.footer-column h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color:  #ffffff;
+    flex: 1;
+    margin-bottom: 20px;
+
+}
+.footer-column a {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    box-sizing: border-box
+
+ 
+
+}
+.footer-column p {
+    width: 100%;
+    color: rgb(255, 255, 254);
+    display: flex;
+    box-sizing: border-box
+ /* Color del texto, puedes ajustar el valor según tu diseño */
+}
+
+.footer-column img {
+    width: 75px;
+    margin-top: 20px ;
+    flex: 1;
+    margin-bottom: 20px;
+ /* Alinea verticalmente las imágenes con el texto */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}/* Estilos para el contenedor de categorías */
+.categorias {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 5px;
+  display: flex; /* Muestra los elementos en línea */
+  justify-content: space-around; /* Distribuye el espacio disponible entre los elementos */
+  align-items: center;
+  background-color: rgba(77, 77, 77, 0.753);
+}
+
+
+  #texto {
+  width: 380px; /* Ancho del campo de búsqueda */
+  padding: 8px; /* Padding interno */
+  }
+.categorias-tematicas {
+  font-size: 43px;
+  color: #a0a19f;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* Estilos para la lista de categorías */
+.categorias ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el espacio interior en la lista */
+}
+
+/* Estilos para los elementos de la lista */
+.categorias li {
+  margin-bottom: 5px; /* Espaciado entre elementos de la lista */
+}
+
+/* Estilos para los enlaces de la lista */
+.categorias a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #fafbfc; /* Color del enlace */
+  transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.categorias a:hover {
+  color: #ecb500; /* Color del enlace al pasar el cursor por encima */
+}
+  .container {
+            background-image: url('HD.JPG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #3b3b3b;
+            border-radius: 5px;
+            background-color: #ffffff9c;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        input[type="text"],
+        textarea,
+        input[type="url"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #e20404;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fffcfc; /* Color del enlace */
+  transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+a:hover {
+  color: #f7b502; /* Color del enlace al pasar el mouse */
+}
+.about-us h2 {
+    font-size: 55px; /* Tamaño del título */
+    color: #ffffff; /* Color del título */
+    margin-bottom: 20px; /* Margen inferior del título */
+}
+
+.about-us p {
+    font-size: 53px; /* Tamaño del texto */
+    color: #fffafa; /* Color del texto */
+    line-height: 1.5; /* Altura de línea */
+}
+
+
+    </style>
+</head>
+<body>
+       <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <p>GamerVerse</p>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Subir Contenido</a></li>
+            <li><a href="#">Eventos y Concursos</a></li>
+            <li><a href="#">Premios</a></li>
+            <li><a href="#">Suscribirse</a></li>
+        </ul>
+    </nav>
+    <div id="busqueda">
+        <form action="buscar.php" method="GET">
+            <label for="texto">Buscar:</label>
+            <input type="text" id="texto" name="texto" placeholder="Escribe aquí tu búsqueda">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</nav>
+    <section id="bienvenida">
+        <div class="bienvenida-container">
+            <h2>¡Bienvenidos a GamerVerse!</h2>
+            <p>Esta página nació con la pasión por los videojuegos y el deseo de crear una comunidad en constante crecimiento. Aquí, estoy dando los primeros pasos en el mundo de la creación de páginas web, videojuegos y aplicaciones. Estoy emocionado por aprender y crecer junto a todos ustedes.</p>
+            <p>GamerVerse no es solo mi proyecto, sino también el tuyo. Quiero que esta comunidad sea un espacio donde puedas compartir tus ideas, sugerencias y opiniones para que juntos podamos expandir nuestro contenido y experiencias. Si tienes ideas para nuevos juegos, mods, tutoriales o cualquier otro aspecto emocionante, ¡no dudes en compartirlas!</p>
+            <p>Además, si sientes la misma pasión por los videojuegos y la tecnología, te invito a unirte a este emocionante viaje. Siempre estoy abierto a colaboraciones y a que más personas se sumen a este proyecto. Juntos, podemos construir una comunidad vibrante y en constante evolución.</p>
+            <p>Así que, bienvenidos a GamerVerse, donde los videojuegos nos unen y donde cada idea es un paso hacia adelante en nuestra emocionante aventura. ¡Gracias por ser parte de esta comunidad en crecimiento!</p>
+    <!-- Sección de Mods Destacados -->
+    <section>
+        <h2>Mods Destacados</h2>
+        <div class="mod-card">
+            <img src="mod.png" alt="Mod Destacado 1">
+            <h3>Mod Destacado 1</h3>
+            <p>Descripción del mod destacado 1...</p>
+        </div>
+        <div class="mod-card">
+            <img src="mod.png" alt="Mod Destacado 2">
+            <h3>Mod Destacado 2</h3>
+            <p>Descripción del mod destacado 2...</p>
+        </div>
+    </section>
+    
+    <!-- Sección de Artículos y Tutoriales -->
+    <section>
+        <h2>Artículos y Tutoriales</h2>
+        <div class="article-card">
+            <h3>Introducción a la Creación de Mods</h3>
+            <p>Aprende los conceptos básicos para crear tus propios mods y personalizar tus juegos favoritos.</p>
+            <!-- Botón Leer más -->
+<button id="leer-mas">Leer más</button>
+
+        </div>
+        <div class="article-card">
+            <h3>Programación de Videojuegos en Unity</h3>
+            <p>Descubre cómo comenzar a programar tus propios videojuegos utilizando Unity.</p>
+            <!-- Botón Leer más -->
+<button id="leer-mas">Leer más</button>
+
+        </div>
+    </section>
+        <!-- Normas del Foro -->
+        <div class="normas">
+            <h3>Normas del Foro</h3>
+            <p>¡Bienvenidos a la Comunidad GamerVerse! Queremos que todos los miembros disfruten de un ambiente amigable y respetuoso. Asegúrate de seguir estas normas al participar en nuestras discusiones:</p>
+            <ol>
+                <li>Respeto Mutuo: Trata a los demás miembros con respeto y cortesía en todo momento. No se tolerarán insultos, discriminación o lenguaje ofensivo.</li>
+                <li>Contenido Apropiado: Mantén tus comentarios y publicaciones relacionados con los temas de videojuegos y mods. Evita contenido inapropiado o spam.</li>
+                <li>Contribuciones Significativas: Participa en discusiones con aportes constructivos y relevantes. Evita comentarios vacíos o irrelevantes.</li>
+                <li>No a la Piratería: No promociones ni compartas enlaces a contenido pirateado o ilegal. Respetamos los derechos de autor.</li>
+                <li>Publicidad Moderada: Evita la autopromoción excesiva. Si deseas compartir tu contenido, asegúrate de que sea relevante y útil para la comunidad.</li>
+                <li>Múltiples Cuentas: Usa una sola cuenta de usuario. No crees múltiples cuentas para evadir sanciones o engañar a otros miembros.</li>
+                <li>Ayuda a los Novatos: Si eres un veterano, ayuda a los nuevos miembros con sus preguntas y dudas. Todos empezamos en algún lugar.</li>
+                <li>Cumple las Instrucciones del Moderador: Sigue las instrucciones de los moderadores y el equipo de administración. Sus decisiones son definitivas.</li>
+            </ol>
+            <p>¡Gracias por ser parte de nuestra comunidad! Juntos, haremos que GamerVerse sea un lugar increíble para los amantes de los videojuegos y los mods.</p>
+        </div>
+            <!-- Agrega aquí el nuevo contenido -->
+    <div class="footer-column">
+        <h4>Nuevo Contenido</h4>
+        <p>Aquí puedes agregar el nuevo contenido que deseas mostrar.</p>
+    </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contribuciones de Usuarios</title>
+    </head>
+    <h2>Foro de Discusión</h2>
+    <!-- Categorías Temáticas -->
+    <div class="categorias">
+        <h3 class="categorias-tematicas">Categorías Temáticas</h3>
+            <li><a href="#">Shooter</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Simulación</a></li>
+            <li><a href="#">Mods de Gráficos</a></li>
+            <li><a href="#">Comunidad</a></li><h3>
+    </div>
+    <body>
+
+
+      <div class="container">
+        <h1>Contribuciones de Usuarios</h1>
+        <h2>Enviar una Contribución</h2>
+        <form action="procesar_envio.php" method="POST" enctype="multipart/form-data">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            
+            <label for="capturas">Capturas de Pantalla:</label>
+            <input type="file" id="capturas" name="capturas[]" multiple accept="image/*" required>
+            
+            <label for="enlace">Enlace de Descarga:</label>
+            <input type="url" id="enlace" name="enlace" required>
+            
+            <button type="submit">Enviar Contribución</button>
+        </form>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contribuciones de Usuarios</title>
+        </head>
+        <body>
+</body>
+<!-- Resumen de Bienvenida -->
+</div>
+</section>
+<div class="about-us">
+<h2>Acerca de Nosotros</h2>
+<p>¡Bienvenidos a GamerVerse! Una comunidad donde la pasión por los videojuegos nos une. Apoyamos a todos, desde principiantes hasta expertos. Únete y crezcamos juntos.</p>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Enlaces</h4>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Preguntas Frecuentes</a>
+            </div>
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <img src="facebook.png" alt="Logo de Facebook">
+                <img src="twitter.png" alt="Logo de twitter">
+                <img src="instagram (1).png" alt="Logo de instagram">
+
+            </div>
+            <div class="footer-column">
+                </h4>Creditos</h4>
+               <a href="https://www.iconfinder.com/">Iconfinder</a>.</p>
+                <a href="https://www.freepik.com/">Freepik</a>.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Términos</h4>
+                <p>&copy; 2023 Comunidad de Videojuegos y Mods. Todos los derechos reservados.</p>
+            </div>
+            <img src="GamerVerse.png" alt="GamerVerse Logo" class="logo">
+        </div>
+    </footer>
+</body>
+</html >
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+    // Función para cambiar el color de fondo
+    function cambiarColorFondo() {
+        document.body.style.backgroundColor = "#ff9900"; // Cambia el color de fondo a naranja
+    }
+</script>
+<style>
+    /* ... (otros estilos CSS) ... */
+</style>
+</head>
+<body>
+<!-- ... (contenido HTML) ... -->
+<button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
+<!-- ... (más contenido HTML) ... -->
+</body>
+</html>
+
+
